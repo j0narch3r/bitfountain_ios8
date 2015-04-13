@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3EA855790D048D45186F0EF0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 08AA742D8ABD2B9DA6873406 /* libPods.a */; };
+		600116791ADC3EF1009B7E97 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600116781ADC3EF1009B7E97 /* LoginViewController.swift */; };
 		6007867B1AD858190068071D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6007867A1AD858190068071D /* AppDelegate.swift */; };
 		6007867E1AD858190068071D /* PlayDate.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6007867C1AD858190068071D /* PlayDate.xcdatamodeld */; };
 		600786801AD858190068071D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6007867F1AD858190068071D /* ViewController.swift */; };
@@ -45,6 +46,7 @@
 
 /* Begin PBXFileReference section */
 		08AA742D8ABD2B9DA6873406 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		600116781ADC3EF1009B7E97 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		600786751AD858190068071D /* PlayDate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlayDate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		600786791AD858190068071D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6007867A1AD858190068071D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				6007869E1AD858910068071D /* Views */,
+				600786A31AD85C1B0068071D /* ViewControllers */,
 				6007867A1AD858190068071D /* AppDelegate.swift */,
 				600786811AD858190068071D /* Main.storyboard */,
 				600786841AD858190068071D /* Images.xcassets */,
@@ -192,7 +195,6 @@
 			children = (
 				6007869F1AD858BD0068071D /* CardView.swift */,
 				600786A11AD85A7E0068071D /* SwipeView.swift */,
-				600786A31AD85C1B0068071D /* ViewControllers */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -201,6 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				6007867F1AD858190068071D /* ViewController.swift */,
+				600116781ADC3EF1009B7E97 /* LoginViewController.swift */,
 				600786A61AD85D3E0068071D /* CardsViewController.swift */,
 			);
 			name = ViewControllers;
@@ -361,6 +364,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				600116791ADC3EF1009B7E97 /* LoginViewController.swift in Sources */,
 				600786801AD858190068071D /* ViewController.swift in Sources */,
 				6007867B1AD858190068071D /* AppDelegate.swift in Sources */,
 				600786A71AD85D3F0068071D /* CardsViewController.swift in Sources */,
