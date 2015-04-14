@@ -20,6 +20,7 @@
 		600786A21AD85A7E0068071D /* SwipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600786A11AD85A7E0068071D /* SwipeView.swift */; };
 		600786A71AD85D3F0068071D /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600786A61AD85D3E0068071D /* CardsViewController.swift */; };
 		6016C63F1ADD8ACE002013F8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6016C63E1ADD8ACE002013F8 /* User.swift */; };
+		6016C6411ADD8CBA002013F8 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6016C6401ADD8CBA002013F8 /* ProfileViewController.swift */; };
 		60EBF6F11AD88ED800A5097F /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60EBF6EF1AD88ED800A5097F /* Parse.framework */; };
 		60EBF6F21AD88ED800A5097F /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60EBF6F01AD88ED800A5097F /* ParseFacebookUtils.framework */; };
 		60EBF6F41AD88F1D00A5097F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60EBF6F31AD88F1D00A5097F /* AudioToolbox.framework */; };
@@ -63,6 +64,7 @@
 		600786A11AD85A7E0068071D /* SwipeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeView.swift; sourceTree = "<group>"; };
 		600786A61AD85D3E0068071D /* CardsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
 		6016C63E1ADD8ACE002013F8 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		6016C6401ADD8CBA002013F8 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		60EBF6EF1AD88ED800A5097F /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		60EBF6F01AD88ED800A5097F /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
 		60EBF6F31AD88F1D00A5097F /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -208,6 +210,7 @@
 				6007867F1AD858190068071D /* ViewController.swift */,
 				600116781ADC3EF1009B7E97 /* LoginViewController.swift */,
 				600786A61AD85D3E0068071D /* CardsViewController.swift */,
+				6016C6401ADD8CBA002013F8 /* ProfileViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -381,6 +384,7 @@
 				600786A71AD85D3F0068071D /* CardsViewController.swift in Sources */,
 				6016C63F1ADD8ACE002013F8 /* User.swift in Sources */,
 				600786A01AD858BD0068071D /* CardView.swift in Sources */,
+				6016C6411ADD8CBA002013F8 /* ProfileViewController.swift in Sources */,
 				600786A21AD85A7E0068071D /* SwipeView.swift in Sources */,
 				6007867E1AD858190068071D /* PlayDate.xcdatamodeld in Sources */,
 			);
