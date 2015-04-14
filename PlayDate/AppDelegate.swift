@@ -20,12 +20,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Initialize Parse.
         
         Parse.setApplicationId("5gWXbPI1opJmRe1Bsv2IEmC1x8ArCFSviXm6zfGc", clientKey: "ZnJgJvoqVJZejCYiSgCyY4LIa0chSAGu4UZqt3Vj")
+        PFFacebookUtils.initializeFacebook()
         
+        // Sample test object for reference
 //        let testObject = PFObject(className: "TestObject")
 //        testObject["foo"] = "bar"
 //        testObject.save()
         
-        PFFacebookUtils.initializeFacebook()
+        
+        
+        var storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        var initialViewController:UIViewController
+        
+        if PFUser.currentUser() != nil {
+            initialViewController = storyboard.instantiateViewControllerWithIdentifier("CardsNavController") as UIViewController
+        }
+        else {
+            initialViewController = storyboard.instantiateViewControllerWithIdentifier("LoginViewController") as UIViewController
+        }
+        
+        self.window?.rootViewController = initialViewController
+        self.window?.makeKeyAndVisible()    
         
         return true
     }
