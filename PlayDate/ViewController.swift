@@ -8,12 +8,22 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIPageViewController, UIPageViewControllerDataSource {
 
+    
+    let cardsVC: UIViewController! = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("CardsNavController") as UIViewController
+    let profileVC: UIViewController! = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("ProfileNavController") as UIViewController
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Do any additional setup after loading the view, typically from a nib.
-        self.view.addSubview(CardView(frame: CGRectMake(20.0, 20.0, 120.0, 200.0)))
+        
+        view.backgroundColor = UIColor.whiteColor()
+        dataSource = self
+        
+        setViewControllers([cardsVC], direction: UIPageViewControllerNavigationDirection.Forward, animated: true, completion: nil)
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,6 +31,27 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    // MARK: UIPageViewControllerDataSource
+    
+    func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController? {
+        
+        switch viewController {
+        case cardsVC:
+            return profileVC
+        default:
+            return nil
+        }
+    }
+    
+    func pageViewController(pageViewController: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController? {
+        
+        switch viewController {
+        case profileVC:
+            return cardsVC
+        default:
+            return nil
+        }
+    }
 
 }
 
